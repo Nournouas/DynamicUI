@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background-color: rgb(26, 92, 150);
+    display: flex;
+    flex-direction: row;
+    padding: 15px 10vw 15px 10vw;
+    position: relative;
+}
+
+.nav-button{
+    background-color: white;
+    padding: 12px;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.nav-button,.outer{
+    border-radius: 0px;
+    font-weight: bold;
+    border: 3px solid rgb(255, 255, 255);
+    transition: ease 150ms;
+}
+
+.nav-button-div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(240, 226, 226);
+    padding: 5px;
+    position: fixed;
+    transition: ease 400ms;
+}
+
+.hidden{
+    display: none;
+}
+
+.nav-button-wrapper{
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-button-wrapper:hover > a{
+    background-color: rgba(240, 248, 255, 0);
+    border: 3px solid rgb(176, 207, 233);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.nav-button:hover{
+    background-color: rgb(247, 247, 247);
+}
+
+.carousel-div{
+    width: 60vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow: hidden;
+}
+
+.carousel-main{
+    display: flex;
+    gap: 10px
+}
+
+.carousel-image-card{
+    width: calc(60vw - 10px);
+    height: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.carousel-image{
+    max-height: 40vw;
+    border-radius: 360px;
+}
+
+.carousel-frame-div{
+    width: 240vw;
+    height: 40vw;
+    
+}
+
+.carousel-controls-div{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-button, .right-button{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.control-number{
+    font-size: 24px;
+    background-color: aqua;
+    padding: 0px 8px 0px 8px;
+    border-radius: 360px;
+    cursor: pointer;
+}

@@ -1,11 +1,11 @@
-import { merge } from "webpack-merge";
-import common from "./webpack.common.js";
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
 
-export default merge(common, {
-  mode: "development",
-  devtool: "inline-source-map",
+module.exports = merge(common, {
+  mode: 'development',
+  devtool: 'inline-source-map',
   devServer: {
-    static: "./dist",
+    static: './dist',
     hot: true,
     port: 3000,
     open: true,
@@ -14,7 +14,7 @@ export default merge(common, {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
